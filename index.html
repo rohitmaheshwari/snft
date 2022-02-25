@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNFT</title>
+
+  <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#"><span class="nth">SN</span><span class="fth">FT</span></a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Drops <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Marketplace</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Auctions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Navigate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">EN</a>
+        </li>
+      </ul>
+      <form summit="" action="" class="form-inline my-2 my-lg-0" onsubmit="return false">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 mr-2 my-sm-0 cn" type="submit">Create NFT</button>
+        <button class="btn btn-outline-success my-2 my-sm-0 cw" id="login1" type="submit" onclick="on()">Connect
+          Wallets</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container justify-content-center gap-6">
+    <div class=" row">
+      <div class="col-12 intro">
+        <img src="logo.png" alt="SNFT">
+        <h1>Apply as an Artist</h1>
+        <h5>Hey, rockstar artist! Fill the application form below! If successful, you'll become an SNFT artist!<br><br>
+          Join over 10 million visitors TODAY!
+        </h5>
+        <img src="10 million visitors.jpg" style="width: 15rem;">
+      </div>
+    </div>
+
+    <!-- Wallet Connection -->
+    <div class="card">
+      <div class="card-body">
+        <div style="float: left">
+          <h2 class="card-title">Wallet Connection</h2>
+          <h6 class="card-text">Firstly, you should connect your Crypto Wallet to our platform.</h6>
+        </div>
+        <p class="card-text" style="float: right"><small class="text-muted"><span>STEP 1</span> / 4</small></p>
+      </div>
+      <div class="row btngrp">
+        <div class="col-sm-6">
+          <input id="field_1" disabled="" value="Here will be your wallet number" type="text" class="form-control"
+            id="exampleInputtext1" aria-describedby="textHelp">
+        </div>
+        <button type="button" class="col-sm-6 btn btn-dark btn-block" id="login2" onclick="on()">Connect</button>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12 sub-intro">
+          <h5>Don't know how to create wallet?!<br>
+            <a href="https://www.one37pm.com/nft/tech/how-to-set-up-metamask-wallet" target="_blank">
+              Metamask
+            </a>
+            <br>For <a href="https://walletconnect.com/" target="_blank">other wallets</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Artist Info -->
+    <div class="card">
+      <div class="card-body">
+        <div style="float: left">
+          <h2 class="card-title">Artist Info</h2>
+        </div>
+        <p class="card-text" style="float: right"><small class="text-muted"><span>STEP 2</span> / 4</small></p>
+      </div>
+      <div class="row sub-btngrp">
+        <script async src="https://eomail5.com/form/540fe623-933e-11ec-9258-0241b9615763.js"
+          style="width: max-content; " data-form="540fe623-933e-11ec-9258-0241b9615763"></script>
+      </div>
+    </div>
+
+    <!-- Verification -->
+    <div class="card">
+      <div class="card-body">
+        <div style="float: left">
+          <h2 class="card-title">Verification</h2>
+          <h6 class="card-text">Post a public tweet that contains your wallet address.</h6>
+        </div>
+        <p class="card-text" style="float: right"><small class="text-muted"><span>STEP 3</span> / 4</small></p>
+      </div>
+      <div class="row btngrp">
+        <div class="col-sm-6">
+          <input id="field_2" disabled="" value="Fill the Step 1 to post your wallet number in Twitter" type="text"
+            class="form-control" id="exampleInputtext3" aria-describedby="textHelp3">
+        </div>
+        <div id="changeText">
+          <a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-size="large"
+            data-text="" data-related="twitterapi,twitter">POST TWEET</a>
+        </div>
+        <!-- <button type="button" class="col-sm-6 btn btn-secondary btn-block"><i class="fa fa-twitter"
+            style="font-size:20px; margin-right: 10px"></i>POST TWEET</button> -->
+
+        <!-- <a class="twitter-share-button col-sm-6 btn btn-secondary btn-block text-white"
+          href="https://twitter.com/intent/tweet" data-size="large" data-text="custom share text"
+          data-url="https://dev.twitter.com/web/tweet-button" data-hashtags="example,demo" data-via="twitterdev"
+          data-related="twitterapi,twitter">
+          </i>POST TWEET
+        </a> -->
+      </div>
+      <hr>
+      <div class="card-body">
+        <h6 class="card-text">Paste the URL of your tweet to verify your profile.</h6>
+      </div>
+      <div class="row sub-btngrp">
+        <div class="col-sm-6"><input placeholder="Tweet URL" type="url" class="form-control" id="exampleInputtext4"
+            aria-describedby="textHelp4"></div>
+        <button type="button" class="col-sm-6 btn btn-secondary btn-block">CONFIRM</button>
+      </div>
+    </div>
+
+    <!-- Confirmation -->
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Confirmation</h2>
+        <h6 class="text-muted">Read and Confirm our Terms and Conditions</h6>
+        <div class="form-check d-flex">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input" id="myCheck">
+            <!-- <div id="demo"></div> -->
+          </label>
+          <div>
+            <p id="agree">I agree with the Platform's rules</p>
+            <p class="">By agreeing to the <a href="https://inf4mation.com/ico/NFT-Artist-Platform-Rules"
+                target="_blank"><b>Terms &amp; Conditions</a></b> on this form, you are confirming that your artwork
+              does not violate our copyright policy and is not present on any other NFT marketplace.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-body col-12">
+      <div class="text-center">
+        <form action="" onsubmit="return isValid();">
+          <button class="btn bg-dark col-sm-3" style="font-size: xx-large; margin: 5rem;"><span
+              class="text-white">APPLY</span>
+          </button>
+        </form>
+      </div>
+      <p class="text-center" style="font-size: large; font-weight: 400;">If you have any question on how to apply for
+        the Artist you can
+        always <br> contact
+        our
+        support team down <a id="callintercomemessanger" href="https://t.me/iNf4mation_chat" target="_blank">here</a>
+      </p>
+    </div>
+
+    <!-- Wallets Overlay  -->
+    <div id="overlay">
+      <div class="walletButtons" style="width:min-content;">
+        <div class="cross"><i class="fas fa-times text-white" onclick="off()"></i></div>
+        <div style="margin-right: 2rem; float: right;">
+          <button onclick="getAccount()" class="btn enableEthereumButton">
+            <img class="metaIcon"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/800px-MetaMask_Fox.svg.png">
+            <span style="font-size: xx-large; font-weight: 800;">CONNECT VIA METAMASK</span>
+          </button>
+          <button class="btn" onclick="connectWC()"><span style="font-size: xx-large; font-weight: 800;">CONNECT
+              VIA WALLETCONNECT</span></button>
+          <a href="https://docs.nftstars.app/nft-stars/guides/how-to-connect-a-metamask-account" class="text-white"
+            target="_blank" style="font-size: xx-large; font-weight: 800;">How to create a wallet
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a> -->
+<!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
