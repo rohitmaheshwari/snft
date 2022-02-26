@@ -33,6 +33,7 @@ connectWC = async () => {
     account = accounts[0];
     showAccount1.value = account;
     showAccount2.value = account;
+    showAccount3.value = account;
 
     document.getElementById("changeText").innerHTML = `<a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-size="large"
     data-text="${showAccount2.value}" data-related="twitterapi,twitter" > POST TWEET</a > `;
@@ -59,6 +60,7 @@ const checkIfWCWalletIsConnect = async () => {
         account = accounts[0];
         showAccount1.value = account;
         showAccount2.value = account;
+        showAccount3.value = account;
 
         document.getElementById("changeText").innerHTML = `<a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-size="large"
     data-text="${showAccount2.value}" data-related="twitterapi,twitter" > POST TWEET</a > `;
@@ -84,6 +86,7 @@ disconnect = async () => {
 // const ethereumButton = document.getElementsByClassName('.enableEthereumButton');
 const showAccount1 = document.querySelector('#field_1');
 const showAccount2 = document.querySelector('#field_2');
+const showAccount3 = document.querySelector('#field_3');
 
 // ethereumButton.addEventListener('click', () => {
 //   getAccount();
@@ -97,6 +100,7 @@ async function getAccount() {
         const account = accounts[0];
         showAccount1.value = account;
         showAccount2.value = account;
+        showAccount3.value = account;
 
         document.getElementById("changeText").innerHTML = `<a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-size="large"
     data-text="${showAccount2.value}" data-related="twitterapi,twitter" > POST TWEET</a > `;
@@ -120,6 +124,7 @@ const checkIfWalletIsConnect = async () => {
             hide();
             showAccount1.value = account;
             showAccount2.value = account;
+            showAccount3.value = account;
 
             document.getElementById("changeText").innerHTML = `<a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-size="large"
     data-text="${showAccount2.value}" data-related="twitterapi,twitter" > POST TWEET</a > `;
